@@ -199,3 +199,52 @@ h4{
 .active {
     opacity: 1;
 }
+.lower {
+}
+.lower__text {
+    font-size: 24px;
+    text-align: center;
+    color: rgb(244, 10, 10);
+    text-shadow: 2px 1px black;
+    margin: 40px 0 0 0;
+}
+.lower__container {
+    position: relative;
+    max-width: 768px;
+    margin: 50px auto;
+}
+.lower__prev {
+    position: absolute;
+    top: 220px;
+    left: 5px;
+
+    transform: rotate(180deg);
+}
+.lower__next {
+    position: absolute;
+    top: 220px;
+    right: 5px;
+}
+.container__rolls {
+    max-width: 670px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+    box-sizing: border-box;
+}
+.lower__slider {
+    display: flex;
+}
+.slider__item {
+}
+.first_item {
+}
+.slider__components {
+}
+.slider__weight {
+}
+.slider__price {
+}
+.slider__button {
+}

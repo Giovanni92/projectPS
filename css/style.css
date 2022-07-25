@@ -69,6 +69,7 @@ body{
     justify-content: space-between;
     
     background-color: rgb(73, 209, 107);
+    border: 1px solid  rgba(0, 0, 0, 0.2);
 }
 
 .header__item{
@@ -96,7 +97,9 @@ body{
 
 
 .middle {
-    
+    margin-top: 0;
+    /* background: linear-gradient(70deg, white, green, red); */
+
 }
 
 .middle__text {
@@ -110,7 +113,7 @@ body{
 .middle__container{
     position: relative;
     max-width: 768px;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
 }
 
 .middle__next{
@@ -200,8 +203,10 @@ h4{
     opacity: 1;
 }
 .lower {
+    
 }
 .lower__text {
+    /* padding-top: 50px; */
     font-size: 24px;
     text-align: center;
     color: rgb(244, 10, 10);
@@ -211,7 +216,7 @@ h4{
 .lower__container {
     position: relative;
     max-width: 768px;
-    margin: 50px auto;
+    margin: 50px auto 0 auto;
 }
 .lower__prev {
     position: absolute;
@@ -236,15 +241,59 @@ h4{
 .lower__slider {
     display: flex;
 }
-.slider__item {
+
+.footer {
 }
-.first_item {
+.footer__up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgb(73, 209, 107);
+
+    border: 1px solid  rgba(0, 0, 0, 0.2);
 }
-.slider__components {
+.footer__text {
+    margin-left: 15px;
+    color: #fff;
 }
-.slider__weight {
+.footer__first {
+    margin: 0;
 }
-.slider__price {
+.footer__second {
+    margin: 0;
 }
-.slider__button {
+.footer_elements {
+    margin-right: 19px;
+    display: flex;
 }
+
+.footer__under {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+
+
+    
+}
+.under__text{
+    margin-left: 15px;
+}
+.under__text p {
+    margin: 0;
+    color: #000;
+    font-size: 12px;
+}
+
+.under__text a {
+    text-decoration:underline;
+    color: rgb(7, 148, 42);
+    font-size: 10px;
+}
+
+.under__elements{
+    margin-right: 19px;
+    display: flex;
+}
+

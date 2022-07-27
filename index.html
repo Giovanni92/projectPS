@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="/js/script.js" defer></script>
+    <script src="js/slider.js" defer></script>
+    <script src="js/slider2.js" defer></script>
     <title>oOPS! Pizza & Sushi</title>
 </head>
 <body>
@@ -35,7 +37,7 @@
                         <div class="header__burger">
                             <span></span>
                         </div>
-                        </div>
+                    </div>
                     <div class="header__under">
                             <div class="header__menu">
                                 <div class="header__item pizza">
@@ -94,7 +96,7 @@
                                 </div>                                
                             </div>                                    
                     </div>
-                
+                </div>
                 <section class="middle">
                     <div class="middle__head">
                         <p class="middle__text">Зустрічай найпопулярніші піцци цього місяца!</p>
@@ -105,7 +107,7 @@
                         <img src="img/right (1).png" alt="" class="middle__next">
                         <div class="container__pizza">                    
                             <div class="middle__slider">
-                                <div class="slider__item first_item">
+                                <div class="slider__item ">
                                     <img src="img/pizza_img/Гавайська2.jpg" alt="">
                                     <h4>Гавайська</h4>
                                     <p class = "slider__components">Склад: олія оливкова, ананас, шинка,соус томатний, сир моцарела, кукурудза, куряче філе</p>
@@ -115,7 +117,7 @@
                                         <a href="">В кошик</a>
                                     </div>
                                 </div>
-                                <div class="slider__item active">
+                                <div class="slider__item">
                                     <img src="img/pizza_img/Грибна з шинкою2.jpg" alt="">
                                     <h4>Грибна з шинкою</h4>
                                     <p class = "slider__components">Склад: олія оливкова, шинка, печериці, петрушка, соус томатний, сир моцарела</p>
@@ -125,7 +127,7 @@
                                         <a href="">В кошик</a>
                                     </div>
                                 </div>
-                                <div class="slider__item">
+                                <div class="slider__item ">
                                     <img src="img/pizza_img/Пеппероні2.jpg" alt="">
                                     <h4>Пеппероні</h4>
                                     <p class = "slider__components">Склад: олія оливкова, без базилік, соус томатний, сир моцарела, ковбаски пепероні</p>
@@ -135,7 +137,7 @@
                                         <a href="">В кошик</a>
                                     </div>
                                 </div>
-                                <div class="slider__item">
+                                <div class="slider__item item--hidden">
                                     <img src="img/pizza_img/Козацька2.jpg" alt="">
                                     <h4>Козацька</h4>
                                     <p class = "slider__components">Склад: шинка, ковбаски мисливські, цибуля, петрушка, сир моцарела, часник, огірки солоні</p>
@@ -145,7 +147,7 @@
                                         <a href="">В кошик</a>
                                     </div>
                                 </div>
-                                <div class="slider__item">
+                                <div class="slider__item item--hidden">
                                     <img src="img/pizza_img/Сицилія2.jpg" alt="">
                                     <h4>Сицилія</h4>
                                     <p class = "slider__components">Склад: орегано, шинка, печериці, цибуля, томати в'ялені, соус томатний, сир моцарела</p>
@@ -155,7 +157,7 @@
                                         <a href="">В кошик</a>
                                     </div>
                                 </div>
-                                <div class="slider__item">
+                                <div class="slider__item item--hidden">
                                     <img src="img/pizza_img/Позітано2.jpg" alt="">
                                     <h4>Позітано</h4>
                                     <p class = "slider__components">Склад: вершки, шинка, бекон, печериці, цибуля, сир моцарела, філе куряче</p>
@@ -165,7 +167,7 @@
                                         <a href="">В кошик</a>
                                     </div>
                                 </div>
-                                <div class="slider__item">
+                                <div class="slider__item item--hidden">
                                     <img src="img/pizza_img/Формаджо2.jpg" alt="">
                                     <h4>Формаджо</h4>
                                     <p class = "slider__components">Склад: вершки, пармезан, сир горгонзола, сир моцарела, сир едам, сир Дор Блю </p>
@@ -175,7 +177,7 @@
                                         <a href="">В кошик</a>
                                     </div>
                                 </div>
-                                <div class="slider__item">
+                                <div class="slider__item last item--hidden">
                                     <img src="img/pizza_img/Імпреза2.jpg" alt="">
                                     <h4>Імпреза</h4>
                                     <p class = "slider__components">Склад: маслини, бекон, цибуля, соус томатний, сир моцарела, філе куряче</p>
@@ -212,7 +214,7 @@
                         <img src="img/right (1).png" alt="" class="lower__next">
                         <div class="container__rolls">                    
                             <div class="lower__slider">
-                                <div class="slider__item first_item">
+                                <div class="slider__item ">
                                     <img src="img/roll_img/Вогняний дракон.jpg" alt="">
                                     <h4>Вогняний дракон</h4>
                                     <p class = "slider__components">Крем сир , норі, ікра масаго, креветка панко, цибуля зелена, рис, лосось, вугор смажений, соус спайс</p>
@@ -222,7 +224,7 @@
                                         <a href="">В кошик</a>
                                     </div>                                
                                 </div>
-                                <div class="slider__item active">
+                                <div class="slider__item ">
                                     <img src="img/roll_img/Гарячий рол темпура з куркою.jpg" alt="">
                                     <h4>Гарячий рол темпура з куркою</h4>
                                     <p class = "slider__components">Салат айсберг, помідор, рис, соус унагі, соус спайс, сир тостовий, сухарі панко, панко курка</p>
@@ -344,10 +346,9 @@
                         
                         <p>© 2022 ФОП " o'OPS (Only Pizza & Sushi) ". Всі права захищені.</p>
                     </div>
-                </div>
-            </div>
-            </div>
-            
+                </div>            
+            </div>            
+        </div>
     </div>
 </body>
 </html>

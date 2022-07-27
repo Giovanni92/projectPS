@@ -134,20 +134,25 @@ body{
     position: relative;
     max-width: 768px;
     margin: 50px auto 0 auto;
+    overflow: hidden;
 }
 
 .middle__next{
     position: absolute;
     top: 220px;
-    right: 5px;
+    right: 0px;
+
+    z-index: 3;
 }
 
 .middle__prev{
     position: absolute;
     top: 220px;
-    left: 5px;
+    left: 0px;
 
     transform: rotate(180deg);
+
+    z-index: 3;
 }
 .container__pizza {
     max-width: 670px;
@@ -156,7 +161,7 @@ body{
     background-color: #fff;
     position: relative;
     box-sizing: border-box;
-    
+    /* margin-left: 60px; */
 }
 
 
@@ -171,14 +176,14 @@ h4{
 }
 .slider__item {
     text-align: center;
-    margin-left: 35px;
-    opacity: 0.3;
+    margin-right: 35px;    
     /* border: 1px solid black; */
     background: linear-gradient(0deg, rgba(247,255,45,0.7738445720084909) 0%, rgba(255,255,255,1) 100%);
+    transition: all 1s ease 0s;
 }
 
-.first_item{
-    margin-left: 0px;
+.last{
+    margin-right: 0px;
 }
 .slider__components {
     text-align: center;
@@ -218,10 +223,12 @@ h4{
     padding-top: 8px;
     color: #000;
 }
-  
-.active {
-    opacity: 1;
+
+.item--hidden{
+    opacity: 0.3;
 }
+  
+
 .lower {
     
 }
@@ -488,14 +495,18 @@ h4{
     }
     .header__burger--open{
         transition: all 1s ease 0s;
+        background-color: rgb(73, 209, 107);
     }
     .header__burger--open::before {
         transform: rotate(45deg);
-        top: 10px;
+        margin-top: 14px;
+        transition: all 1s ease 0s;
     }
     .header__burger--open::after{
         transform: rotate(-45deg);
-        bottom: 10px;
+        margin-bottom: 14px;
+        
+        transition: all 1s ease 0s;
     }
     .header__burger--open span{
         transform: scale(0);
@@ -530,11 +541,12 @@ h4{
         max-width: 410px;
     }
     .slider__item{
-        margin-left: 10px;
+        margin-left: 0px;
+        margin-right: 30px;
     }
 
     .middle__container{
-        max-width: 480px;
+        max-width: 500px;
     }
     .middle__prev{
         left:0;

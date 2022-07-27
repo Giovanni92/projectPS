@@ -3,6 +3,123 @@ body{
     padding: 0; 
     font-family: 'Roboto', sans-serif;
 }
+/* header */
+.header__up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.header__logo {
+    margin-left: 22px;
+    margin-top: 10px;
+    z-index: 100;
+}
+.header__phones{
+    text-align: center;
+    /* z-index: 100; */
+}
+.header__text{
+    margin: 0;
+    font-size: 12px;
+    color: rgb(203, 6, 6);;
+}
+.header__phones a{
+    display: block;
+    font-size: 12px;
+    color: rgb(20, 174, 58);
+    text-decoration: none;
+}
+.header__nav {
+    margin-right: 15px;
+}
+
+.nav_first, .nav_second {
+    color: rgb(203, 6, 6);
+    text-decoration: none;
+    
+    font-weight: 700;
+}
+
+.nav_second {
+    margin-left: 20px;   
+}
+
+.nav_first:hover{
+    color: rgb(7, 148, 42);
+}
+.nav_second:hover{
+    color: rgb(7, 148, 42);
+}
+.header__burger{
+    display: none;
+}
+.header__under {
+    
+}
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    
+    background-color: rgb(73, 209, 107);
+    border: 1px solid  rgba(0, 0, 0, 0.2);
+    padding-left: 22px;
+    padding-right: 19px;
+}
+
+.header__item{
+    text-align: center;
+    padding: 5px 0;
+    /* align-items: center; */
+}
+.header__item a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.header__item a:hover{
+    color: rgb(244, 10, 10)
+}
+
+
+.pizza{
+    padding: 5px 0;
+}
+
+.drinks{
+    padding: 5px 0;
+}
+/* header small */
+.header__under-mini {
+    display: none;
+    background-color: rgb(73, 209, 107);
+}
+.header__under-first-block {
+    display: flex;
+    margin: 0 19px 0 22px;
+    justify-content: space-between;
+}
+.header__item {
+    text-align: center;
+}
+.pizza {
+    padding: 0;
+}
+.header__under-second-block {
+    display: flex;
+    margin: 0 19px 0 22px;
+    justify-content: space-between;
+}
+.header__under-first-block a,
+.header__under-second-block a{
+    font-size: 12px;
+}
+.drinks {
+    padding: 0;
+}
+
 .lower {
     
 }
@@ -107,4 +224,101 @@ body{
   
 .active {
     opacity: 1;
+}
+
+/* media-part */
+@media (max-width: 769px){
+    .header__nav{
+        display: flex;
+        
+        position: fixed;
+        top: -100%;
+        left:0px;
+        right:40px;
+        width:100%;
+        height:100%;
+        background-color: #fff;
+        z-index: 99;        
+
+        transition: all 1s ease 0s;
+        
+    }
+   .header__nav--open{        
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding-top: 30px;
+        gap: 30px;
+        top:63px;        
+        
+    }
+    .nav_first, 
+    .nav_second{
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+       
+    }
+    .nav_first{
+        
+    }
+
+    .header__under-mini{
+        display: block;
+    }
+    .header__burger{
+        display: block;
+        width: 40px;
+        height: 30px;
+        position: relative;
+        margin-right: 19px;
+        cursor: pointer;
+        z-index: 100;
+
+        
+    }
+    .header__burger--open{
+        transition: all 1s ease 0s;
+        background-color: rgb(73, 209, 107);
+    }
+    .header__burger--open::before {
+        transform: rotate(45deg);
+        margin-top: 14px;
+        transition: all 1s ease 0s;
+    }
+    .header__burger--open::after{
+        transform: rotate(-45deg);
+        margin-bottom: 14px;
+        
+        transition: all 1s ease 0s;
+    }
+    .header__burger--open span{
+        transform: scale(0);
+    }
+    
+    .header__burger span{
+        position: absolute;
+        width: 100%;
+        background-color: rgb(203, 6, 6);
+        top: 14px;
+        height:2px;
+    }
+    .header__burger::before ,
+    .header__burger::after{
+        content: '';
+        background-color: rgb(203, 6, 6);
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+    }
+    .header__burger::before{
+        top: 0;
+    }
+    .header__burger::after{
+        bottom: 0;
+    }
+    .header__under{
+        display: none;
+    }
 }

@@ -224,6 +224,24 @@ h4{
     color: #000;
 }
 
+.slider__button button{
+    display: flex;
+    box-sizing: border-box;
+    width: 120px;
+    height: 40px;
+    background: rgb(250, 219, 14);
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 15%;
+    border: 2px solid black;
+    text-shadow: 1px 1px black;
+    padding-top: 8px;
+    color: #000;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
 .item--hidden{
     opacity: 0.3;
 }

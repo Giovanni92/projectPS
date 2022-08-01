@@ -1,0 +1,28 @@
+.slider__button{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.ign: center;
+    padding-bottom: 8px;
+    cursor: pointer;
+}slider__button button{
+    display: block;
+    box-sizing: border-box;
+    width: 120px;
+    height: 40px;
+    background: rgb(250, 219, 14);
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 15%;
+    border: 2px solid black;
+    text-shadow: 1px 1px black;
+    padding-top: 8px;
+    color: #000;
+    text-al
+
+.slider__button button:hover{
+    background: rgb(250, 219, 14);
+    color: #000;
+}

@@ -1,27 +1,17 @@
-class Bascket {
-    constructor({pizzaSelector, markedPizzaSelector, chosenBtnSelector}){
-        this.root = document.querySelector(pizzaSelector);
-        this.body = this.root.querySelector('.middle__slider');
-        this.itemsPizza = Array.from(this.root.querySelectorAll('.pizza--item'));
-        
-        this.button = this.root.querySelectorAll('.slider__button');
-        
-        this.button.addEventListener('click', () => {
-            this.itemsPizza.classList.toggle(markedPizzaSelector);
-            this.button.classList.toggle(chosenBtnSelector);
-        });
 
-        console.log(this.button);
-        console.log(this.itemsPizza);
-    }
-    
+
+const root = document.querySelector('.container__pizza');
+const body = document.querySelector('.middle__slider');
+const itemsPizza = Array.from(body.querySelectorAll('.pizza--item'));
+const buttons = Array.from(body.querySelectorAll('.button__bascket'));
+
+for (let i = 0; i <= buttons.length; i++) {
+    buttons[i].addEventListener('click', () => {
+        buttons[i].classList.toggle('chosen--btn');
+        itemsPizza[i].classList.toggle('chosen--item');
+    });
 }
 
-new Bascket ({
-    pizzaSelector: '.container__pizza',
-    markedPizzaSelector: 'marked--item',
-    chosenBtnSelector: 'chosen--btn',
-});
-
-
-
+for (let i = 0; i <=itemsPizza.length; i++) {
+    console.log (itemsPizza[i]);
+}

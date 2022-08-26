@@ -104,6 +104,59 @@ body{
     padding: 5px 0;
 }
 
+.popup {
+    display: flex;
+    width: 400px;
+    height: 200px;
+    justify-content: space-between;
+    margin: 0 auto;
+    border: 1px black solid;
+    background-color: #fff;
+    position: absolute;
+    top: -30%;
+    left: 35%;
+    transition: all 1s ease 0s;
+}
+
+.active--popup{
+    display: flex;
+    transition: all 3s ease 4s;
+    top: 30%;
+    left: 35%;
+    transition: all 1s ease 0s;
+}
+
+.popup__bg{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0 , 0 , 0 , 0.5);
+    z-index: 50;
+    transition: all 1s ease 0s;
+}
+
+.active--popup__bg{
+    display: block;
+    transition: all 1s ease 0s;
+}
+.popup__text {
+    padding-top: 60px;
+    margin-left: 25px;
+}
+.popup__text h4{
+    font-size: 14px;
+}
+.popup__img {
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.popup__img img{
+    cursor: pointer;
+}
+
 
 .middle {
     margin-top: 0;
@@ -207,6 +260,7 @@ h4{
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+    
 }
 
 .slider__button a{
@@ -297,7 +351,16 @@ h4{
     display: flex;
 }
 
+.roll--item{
+    height: 570px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .footer {
+    margin-top: 50px;
 }
 .footer__up {
     display: flex;
@@ -562,6 +625,8 @@ h4{
         margin-left: 0px;
         margin-right: 30px;
     }
+
+   
 
     .middle__container{
         max-width: 500px;

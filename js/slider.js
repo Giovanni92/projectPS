@@ -44,6 +44,18 @@ class Slider {
                 slide.classList.remove('item--hidden')
             }
         });
+
+        if(this.currentSlide > this.items.length - this.visibleSlides - 1){
+            this.nextBtn.classList.add('next--hidden');
+        } else{
+            this.nextBtn.classList.remove('next--hidden');
+        }
+
+        if(this.currentSlide === 0){
+            this.prevBtn.classList.add('previous--hidden');
+        } else {
+            this.prevBtn.classList.remove('previous--hidden');
+        }
     }
 }
 

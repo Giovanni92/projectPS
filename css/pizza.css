@@ -3,6 +3,9 @@ body{
     padding: 0; 
     font-family: 'Roboto', sans-serif;
 }
+body.lock{
+    overflow: hidden;
+}
 /* header */
 .header__up {
     display: flex;
@@ -54,9 +57,7 @@ body{
 .header__burger{
     display: none;
 }
-.header__under {
-    
-}
+
 .header__menu {
     display: flex;
     justify-content: space-between;
@@ -80,7 +81,7 @@ body{
 }
 
 .header__item a:hover{
-    color: rgb(244, 10, 10)
+    color: rgb(244, 10, 10);
 }
 
 
@@ -118,6 +119,23 @@ body{
 }
 .drinks {
     padding: 0;
+}
+
+.back__main {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.back_img{
+    margin-top: 10px;
+}
+.back__btn {
+    color: rgb(7, 148, 42);
+    text-decoration: none;
+    font-weight: 700;
+    /* text-shadow: 1px 1px black; */
+    font-size: 12px;
+    padding: 5px 5px 5px 0;
 }
 
 .middle {
@@ -262,10 +280,7 @@ h4{
         justify-content: center;
        
     }
-    .nav_first{
-        
-    }
-
+    
     .header__under-mini{
         display: block;
     }

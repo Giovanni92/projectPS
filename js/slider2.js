@@ -38,19 +38,24 @@ class Slider2 {
                 slide.classList.remove('item--hidden');
             }            
         });
-        
+
         if(this.currentSlide > this.items.length - this.visibleSlides - 1){
             this.nextBtn.classList.add('next--hidden');
         } else{
             this.nextBtn.classList.remove('next--hidden');
         }
 
-        if(this.currentSlide === 0){
-            this.prevBtn.classList.add('previous--hidden');
-        } else {
-            this.prevBtn.classList.remove('previous--hidden');
+        // if(this.currentSlide === 0){
+        //     this.prevBtn.classList.add('previous--hidden');
+        // } else {
+        //     this.prevBtn.classList.remove('previous--hidden');
+        // }
+        if (this.currentSlide > 0){
+            this.prevBtn.classList.add('active--prev-btn');
+        } else if(this.currentSlide === 0){
+            this.prevBtn.classList.remove('active--prev-btn');
         }
     }
 }
 
-console.log(new Slider2 ('.lower__container'));
+new Slider2 ('.lower__container');

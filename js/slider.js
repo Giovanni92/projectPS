@@ -51,10 +51,15 @@ class Slider {
             this.nextBtn.classList.remove('next--hidden');
         }
 
-        if(this.currentSlide === 0){
-            this.prevBtn.classList.add('previous--hidden');
-        } else {
+        // if(this.currentSlide === 0){
+        //     this.prevBtn.classList.add('previous--hidden');
+        // } else {
+        //     this.prevBtn.classList.remove('previous--hidden');
+        // }
+        if(this.currentSlide > 0){
             this.prevBtn.classList.remove('previous--hidden');
+        } else if (this.currentSlide === 0){
+            this.prevBtn.classList.add('previous--hidden')
         }
     }
 }
